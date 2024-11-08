@@ -55,7 +55,7 @@ class ProxyServerApp(ShadowServer):
         asyncio.run(self.start_server(host=host, port=port))
 
 
-app = ProxyServerApp(settings_file="settings.json")
+app = ProxyServerApp(settings_file="settings.json", debug_mode=False)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
