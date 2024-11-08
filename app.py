@@ -52,7 +52,6 @@ class ProxyServerApp(ShadowServer):
             raise ValueError("Application ID is not defined in settings file.")
         if self.remote_server_uri is not None:
             print(f"<< Remote server: {self.remote_server_uri} >>")
-
         asyncio.run(self.start_server(host=host, port=port))
 
 
